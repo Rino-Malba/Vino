@@ -1,24 +1,9 @@
-# vino
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Vino
+- Rino Malbašić
+- Fakultet informatike u Puli https://fipu.unipu.hr/
+- Kolegij: Programsko inženjerstvo https://ntankovic.unipu.hr/pi
+- Mentori: doc. dr. sc. Nikola Tanković https://ntankovic.unipu.hr i Toni Starčić, univ. bacc. inf.
+- Aplikacija služi za lakši pristup vinima i mislimo proširiti dohvat tvrtke na sve dijelove zemlje, pa čak i uključiti i prodavati ulja.
+- Prototip: https://www.figma.com/file/LrDnFnrQiM4oWj4Vn99ihB/Vino?node-id=0%3A1
+- Zaduženja (planirana) po članu tima:
+- HTML, CSS i Javascript - Rino Malbašić
