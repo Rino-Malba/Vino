@@ -1,19 +1,27 @@
 <template>
-  <img alt="Vino Logo" src="./assets/logo.png">
-  <SignUp/>
+  <Navbar/>
+  <div id="app">
+    <router-view/>
+    <SignUp/>
+  </div>
 </template>
 
 <script>
 import SignUp from './components/SignUp.vue'
+import Navigation from './components/Navigation.vue';
+import Navbar from './components/Navbar.vue'
+
 export default {
   name: 'App',
-  Components : {
-    SignUp
-  }
+  components : {
+    SignUp,
+    Navigation,
+    Navbar
+}
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

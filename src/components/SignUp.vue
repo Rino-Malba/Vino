@@ -1,26 +1,66 @@
 <template>
-<SignUp/>
-<img class="logo" src="../assets/logo.png">
-<header>
 <h1>Sign up</h1>
-</header>
-<div>
-    <input type="text" placeholder="Enter Name" />
-    <input type="text" placeholder="Enter Email" />
-    <input type="text" placeholder="Enter Password" />
-    <button>Sign Up</button>
+<div class="register">
+    <input type="text" v-model="name" placeholder="Enter Name"/>
+    <input type="text" v-model="email" placeholder="Enter Email"/>
+    <input type="password" v-model="password" placeholder="Enter Password"/>
+    <button v-on:click="signUp">Sign Up</button>
 </div>
 </template>
 
 
 <script>
+import axios from 'axios'
 export default {
-    name: "SignUp",
+    name: 'SignUp',
+    data()
+    {
+        return{
+            name: '',
+            email: '',
+            password: ''
+        }
+    },
+    methods:{
+        async signUp()
+        {
+            let result = await axios.post("https://localhost:3000/users", {
+                name:this.name,
+                email:this.email,
+                password:this.password
+            });
+
+            console.warn(result);
+            if (result.status==201)
+            {
+                alert("sign-up done");
+                localStorage.setItem("user-info",JSON.stringify(result.data))
+            }
+        }
+    }
 }
 </script>
 
 <style>
 .logo{
-    width: 100px;
+    width: 300px;
+}
+.register input{
+  width: 300px;
+  height: 40px;
+  padding-left: 20px;
+  display: block;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 2px solid seagreen;
+}
+.register button{
+  width: 320px;
+  height: 40px;
+  border: 1px solid seagreen;
+  background: seagreen;
+  color: white;
+  cursor: pointer;
 }
 </style>
