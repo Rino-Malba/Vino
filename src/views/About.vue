@@ -1,28 +1,18 @@
 <template>
   <div class="navbar">
-  <Navbar/>
-    <div id="app">
-    <router-view/>
-    <SignUp/>
-    </div>
+    
   </div>
   <div class="bg">
-    <Bg/>
   </div>
-  <Login/>
 </template>
 
 <script>
-import Login from './components/Login.vue'
-import Navbar from './components/Navbar.vue'
-import Bg from './components/Bg.vue'
+
 
 export default {
   name: 'App',
   components : {
-    Login,
-    Navbar,
-    Bg
+
 }
 }
 </script>
