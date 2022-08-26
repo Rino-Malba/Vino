@@ -1,42 +1,40 @@
 <template>
-  <div class="navbar">
+<div class="navbar">
   <Navbar/>
     <div id="app">
     <router-view/>
-    <SignUp/>
     </div>
   </div>
   <div class="bg">
     <Bg/>
   </div>
-  <Login/>
 </template>
 
 <script>
-import Login from './components/Login.vue'
 import Navbar from './components/Navbar.vue'
 import Bg from './components/Bg.vue'
 
 export default {
   name: 'App',
-  components : {
-    Login,
+  components: {
     Navbar,
-    Bg
+    Bg,
 }
 }
 </script>
 
-<style lang="scss">
 
+
+<style lang="scss">
 .navbar{
   position: fixed;
+  z-index: 9;
 }
 
 .bg{
   position: fixed;
   max-width: 100%;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .app {
@@ -46,4 +44,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   }
+
 </style>

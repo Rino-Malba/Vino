@@ -1,32 +1,36 @@
 <template>
   <div class="navbar">
-    
+    <Navbar/>
+  </div>
+  <div>
+
   </div>
   <div class="bg">
   </div>
 </template>
 
 <script>
-
+import Navbar from '../components/Navbar.vue'
 
 export default {
-  name: 'App',
+  name: 'About',
   components : {
-
+    Navbar
 }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 .navbar{
   position: fixed;
+  z-index: 9;
 }
 
 .bg{
   position: fixed;
   max-width: 100%;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .app {

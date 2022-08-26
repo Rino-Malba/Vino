@@ -27,6 +27,13 @@ export default{};
         width: 100vh;
         height: 50vh;
         padding-left: calc(var(--bs-gutter-x) * 0);
+
+    }
+
+    .bg{
+        position: fixed;
+        max-width: 100%;
+        margin-top: 30px;
     }
 
 </style>

@@ -18,9 +18,11 @@
 
 <script>
 export default {};
+
+
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
     @font-face {
         font-family: 'Pacifico';
