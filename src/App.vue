@@ -1,6 +1,6 @@
 <template>
 <div class="navbar">
-  <Navbar/>
+      <Navbar/>
     <div id="app">
     <router-view/>
     </div>
@@ -34,7 +34,7 @@ export default {
 .bg{
   position: fixed;
   max-width: 100%;
-  margin-top: 0px;
+  margin-top: -16px;
 }
 
 .app {

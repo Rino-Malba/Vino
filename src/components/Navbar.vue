@@ -37,7 +37,7 @@ export default {};
     nav{
          position: fixed;
          top: 0;
-         background: #5e983a;
+         background: linear-gradient(90deg, rgba(94,152,58,1) 29%, rgba(139,181,113,1) 73%, rgba(139,181,113, 0.6) 100%);
          height: 50px;
          width: 100%;
          font-size: x-large;

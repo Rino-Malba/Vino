@@ -2,7 +2,6 @@
 <div class="text">
 <h1 class="h1">Log in</h1>
 <div class="register">
-    <input type="text" v-model="name" placeholder="Enter Name"/>
     <input type="text" v-model="email" placeholder="Enter Email"/>
     <input type="password" v-model="password" placeholder="Enter Password"/>
     <button id="login" v-on:click="logIn">Log in</button>
@@ -18,7 +17,6 @@ export default {
     data()
     {
         return{
-            name: '',
             email: '',
             password: ''
         }
@@ -26,21 +24,32 @@ export default {
     methods:{
         async logIn()
         {
-            let result = await axios.post("https://localhost:3000/users", {
-                name:this.name,
-                email:this.email,
-                password:this.password
-            });
+            let result = await axios.get('https://localhost:3000/users?=${this.email}&password=${this.password}')
 
-            console.warn(result);
-            if (result.status==201)
-            {
-                alert("sign-up done");
-                localStorage.setItem("user-info",JSON.stringify(result.data))
+            if(result.status==200 && result.data.lenght>0){
+                localStorage.setItem("user-info",JSON.stringify(result.data[0]))
+                this.$router.push({name:'Home'})
             }
+
+            console.warn(result)
+            
+            
         }
     }
 }
+
+axios.interceptors.response.use(
+    response => {
+        return response
+    },
+    error => {
+        if (!error.response) {
+            console.log("Please check your internet connection.");
+        }
+
+        return Promise.reject(error)
+    }
+)
 
 </script>
 
@@ -52,14 +61,17 @@ export default {
 }
 
 .text{
-    margin: 100px;
-    position: relative;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    margin: auto;
+    margin-top: 30vh;
+    z-index: 8;
 }
 
 h1{
     font-family: "SansitaWashed";
     color: #bb044b;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 2px black;
     text-align: center;
 }
 
