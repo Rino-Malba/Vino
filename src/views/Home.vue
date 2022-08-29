@@ -9,6 +9,9 @@
   <div>
     <img class="img" src="@/assets/bottle.png">
   </div>
+  <div class="menu">
+    <router-link to="/menu" class="menulink">Kupnja</router-link>
+  </div>
   </div>
 </template>
 
@@ -22,6 +25,29 @@ export default {
 </script>
 
 <style scoped>
+
+.menu{
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  margin: auto;
+  margin-top: 85vh;
+  margin-left: 165vh;
+  margin-right: 20vh;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 10;
+}
+
+.menulink{
+  color: ivory;
+  font-size: 50px;
+  font-family: "Lobster";
+  -webkit-text-stroke: 2px black;
+  text-decoration: none;
+}
+
+.menulink:hover{
+  color: #bb044b;
+}
 
 img{
   position: absolute;

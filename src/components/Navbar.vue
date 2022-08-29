@@ -3,12 +3,12 @@
     <div class="d-flex flex-row">
       <div class="container-fluid" style="display:inline-block">
         <a class="navbar-brand" href="#">
-        <img id="img" src="../assets/logo.png" alt="">
+        <router-link to="/"><img id="img" src="../assets/logo.png" alt=""></router-link>
         </a>
     </div>    
         <div class="navtxt d-flex flex-row">
         <router-link to="/" class="nav-link" id="links">Home</router-link>
-        <router-link to="/about" class="nav-link" id="links">O nama</router-link>
+        <router-link to="/about" class="nav-link" id="links">Info</router-link>
         <router-link to="/cart" class="nav-link" id="links">Košarica</router-link>
         <router-link to="/login" class="nav-link" id="links">Login</router-link>
         </div>
