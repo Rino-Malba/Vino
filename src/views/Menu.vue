@@ -2,8 +2,8 @@
 
     <div class="bgc">
         <router-link to="/proizvodi" style="text-decoration: none; color:inherit; -webkit-text-stroke: 1px black;"><div class="cat1">Proizvodi</div></router-link>
-        <div class="cat1">Galerija</div>
-        <div class="cat1">Vinogradi</div>
+        <router-link to="/galerija" style="text-decoration: none; color:inherit; -webkit-text-stroke: 1px black;"><div class="cat1">Galerija</div></router-link>
+        <router-link to="/vinogradi" style="text-decoration: none; color:inherit; -webkit-text-stroke: 1px black;"><div class="cat1">Vinogradi</div></router-link>
     </div>
 
     <div class="bgc2">
@@ -14,8 +14,22 @@
 </template>
 
 <script>
-
-export default({});
+export default({
+    data(){
+       return{
+        services:[
+            {
+            title: 'Malvazija',
+            link: '@/views/Malvazija.vue'
+            },
+            {
+            title: 'Merlot',
+            link: '@/views/Merlot.vue'
+            }
+        ]
+       } 
+    }
+});
 
 </script>
 
@@ -68,6 +82,8 @@ export default({});
         border-color: black;
         background-color: #bb044b;
     }
+
+    
     .bgc{
         text-decoration: none;
         border-style: solid;

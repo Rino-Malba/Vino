@@ -10,7 +10,7 @@
       <div><span class="txt1">Lokacija:</span><span class="txt3"> Novigrad</span></div>
       <div><span class="txt1">E-mail:</span><span class="txt3"> cellus.vinoprodaja@gmail.com</span></div>
       <div class="txt1">Partnerske Vinarije:</div>
-      <img class="img2" src="@/assets/agrolaguna.png">
+      <div><img class="img2" src="@/assets/agrolaguna.png"></div>
       <div class="txt2">I MNOGE DRUGE:</div>
     </div>
 
@@ -43,6 +43,7 @@ export default{
   height: auto;
   margin-top: 30vh;
   margin-left: 0vh;
+  filter: invert(1);
 }
 
 .txt{

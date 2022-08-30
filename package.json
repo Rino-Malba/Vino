@@ -11,9 +11,10 @@
     "axios": "^0.27.2",
     "bootstrap": "^5.2.0",
     "bootstrap-vue": "^2.22.0",
+    "cloudinary-vue": "^1.2.4",
     "core-js": "^3.8.3",
     "firebase": "^9.9.3",
-    "vue": "^3.2.37",
+    "vue": "^3.2.38",
     "vue-router": "^4.1.4"
   },
   "devDependencies": {
@@ -25,7 +26,8 @@
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "sass": "^1.54.5",
-    "sass-loader": "^13.0.2"
+    "sass-loader": "^13.0.2",
+    "tachyons": "^4.12.0"
   },
   "eslintConfig": {
     "root": true,
