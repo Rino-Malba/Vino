@@ -39,7 +39,7 @@ export default{
 
 .img2{
   position: absolute;
-  width: 50%;
+  width: 50vh;
   height: auto;
   margin-top: 30vh;
   margin-left: 0vh;
@@ -56,6 +56,7 @@ export default{
   padding: 2vh;
   -webkit-font-stroke: 1px black;
   height: 50vh;
+  width: 100vh;
 }
 
 .txt1{

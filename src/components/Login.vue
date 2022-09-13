@@ -61,11 +61,11 @@
         src: url(@/assets/fonts/SansitaSwashed-BlackItalic.ttf);
     }
     .text{
-        position: absolute;
         top: 0; bottom: 0; left: 0; right: 0; 
         margin: auto;
         margin-top: 30vh;
         z-index: 8;
+        margin-left: 85vh;
     }
     h1{
         font-family: "SansitaWashed";
@@ -76,6 +76,7 @@
     .register{
         margin-top: 30px;
         text-align: center;
+        
     }
     .register input{
       width: 300px;

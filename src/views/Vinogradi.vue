@@ -51,6 +51,7 @@ export default({
         height: 80vh;
         margin-top: 15vh;
         left: 77%;
+        margin-left: 162vh;
     }
 
     .slika{
