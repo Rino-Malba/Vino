@@ -11,7 +11,7 @@
       <div><span class="txt1">E-mail:</span><span class="txt3"> cellus.vinoprodaja@gmail.com</span></div>
       <div class="txt1">Partnerske Vinarije:</div>
       <div><img class="img2" src="@/assets/agrolaguna.png"></div>
-      <div class="txt2">I MNOGE DRUGE:</div>
+      <div class="txt2">I MNOGE DRUGE...</div>
     </div>
 
     <div>
@@ -55,6 +55,7 @@ export default{
   color: ivory;
   padding: 2vh;
   -webkit-font-stroke: 1px black;
+  height: 50vh;
 }
 
 .txt1{
@@ -70,6 +71,7 @@ export default{
   font-weight: 900;
   -webkit-text-stroke: 1px black;
   text-align: right;
+  margin-top: 17vh;
 }
 
 .txt3{

@@ -27,8 +27,8 @@ export default {
 
 <style lang="scss">
 .navbar{
-  position: fixed;
-  z-index: 9;
+  position: absolute;
+  z-index: 11;
 }
 
 .bg{
